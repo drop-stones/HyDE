@@ -57,9 +57,6 @@ else
     printt_log -y "[FILEMANAGER] " -b " :: " "Setting $(xdg-mime query default "inode/directory") as default file explorer..."
 fi
 
-# shell
-"${scrDir}/restore_shl.sh"
-
 # flatpak
 if ! pkg_installed flatpak; then
     print_log -r "[FLATPAK]" -b "list :: " "flatpak application"
